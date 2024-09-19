@@ -1,0 +1,200 @@
+[
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "name": "Война и мир",
+      "author": "Л.Н. Толстой",
+      "pub_date": "2018-02-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "name": "1984",
+      "author": "Джордж Оруэл",
+      "pub_date": "2016-12-06"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "name": "Война и мир",
+      "author": "Л.Н. Толстой",
+      "pub_date": "2018-02-27"
+    }
+  },
+    {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "Python. Книга рецептов",
+      "author": "Бизли и Джонс",
+      "pub_date": "2013-11-13"
+    }
+  },
+    {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "name": "Знакомство с Python",
+      "author": "Дэн Бейдер",
+      "pub_date": "2015-12-15"
+    }
+  },
+      {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "name": "Даниэль Зингаро",
+      "author": "Л.Н. Толстой",
+      "pub_date": "2003-01-07"
+    }
+  },
+      {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "name": "Изучаем Python. Том 1",
+      "author": "Марк Лутц",
+      "pub_date": "2013-07-21"
+    }
+  },
+        {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "name": "Изучаем Python. Том 1",
+      "author": "Марк Лутц",
+      "pub_date": "2013-07-21"
+    }
+  },
+      {
+        "model": "books.book",
+        "pk": 8,
+        "fields": {
+            "name": "Прислуга",
+            "author": "Кэтрин Стокетт",
+            "pub_date": "2009-07-21"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 9,
+        "fields": {
+            "name": "Девушка, которая играла с огнем",
+            "author": "Давид Лагеркранц",
+            "pub_date": "2015-07-21"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 10,
+        "fields": {
+            "name": "Путешествие по Европе",
+            "author": "Билл Брайсон",
+            "pub_date": "2018-07-21"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 11,
+        "fields": {
+            "name": "Пока течет река",
+            "author": "Диана Сеттерфилд",
+            "pub_date": "2018-02-13"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 12,
+        "fields": {
+            "name": "Происхождение",
+            "author": "Дэн Браун",
+            "pub_date": "2017-07-13"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 13,
+        "fields": {
+            "name": "Институт",
+            "author": "Стивен Кинг",
+            "pub_date": "2019-05-13"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 14,
+        "fields": {
+            "name": "В саду чудовищ",
+            "author": "Эрик Ларсон",
+            "pub_date": "2011-06-13"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 15,
+        "fields": {
+            "name": "Беглянка",
+            "author": "Элис Манро",
+            "pub_date": "2009-11-23"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 16,
+        "fields": {
+            "name": "Серебряная ложка",
+            "author": "Мэттью Квик",
+            "pub_date": "2011-11-23"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 17,
+        "fields": {
+            "name": "Сойка-пересмешница",
+            "author": "Сьюзен Коллинз",
+            "pub_date": "2010-11-23"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 18,
+        "fields": {
+            "name": "Не оставляй меня",
+            "author": "Карин Слотер",
+            "pub_date": "2017-11-23"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 19,
+        "fields": {
+            "name": "Огонь и кровь",
+            "author": "Майкл Коннелли",
+            "pub_date": "2018-11-23"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 20,
+        "fields": {
+            "name": "Тень ветра",
+            "author": "Карлос Руис Сафон",
+            "pub_date": "2001-11-23"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 21,
+        "fields": {
+            "name": "Все та же я",
+            "author": "Сара Джио",
+            "pub_date": "2016-11-23"
+        }
+    }
+]

@@ -1,0 +1,38 @@
+{% extends "books/base.html" %}
+{% load static %}
+
+{% block title %}Информация о книге{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="header">
+            <h1><a href="/books">Назад к каталогу</a></h1>
+        </div>
+        <div class="row">
+
+            <div class="book col-md-10">
+                <h2>Детальная информация о книге - {{ book.name }}</h2>
+            </div>
+            <table class="table">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Автор</th>
+                  <td>{{ book.author }}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Дата публикации</th>
+                  <td>{{ book.pub_date }}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Иная информация</th>
+                  <td colspan="2">.....</td>
+                </tr>
+              </tbody>
+            </table>
+
+        </div>
+        {% include 'books/paginator.html' with page=page %}
+    </div>
+
+{% endblock %}

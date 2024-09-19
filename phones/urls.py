@@ -1,11 +1,9 @@
 from django.urls import path
-import phones.views
+from .views import ShowProduct, ShowCatalog, Index
 
 
 urlpatterns = [
-    path('', phones.views.index),
-    path('catalog/', phones.views.show_catalog, name='catalog'),
-    path('catalog/<slug:slug>/', phones.views.show_product, name='phone'),
+    path('', Index.as_view()),
+    path('catalog/', ShowCatalog.as_view(), name='catalog'),
+    path('catalog/<slug:slug>/', ShowProduct.as_view(), name='phone'),
 ]
-
-

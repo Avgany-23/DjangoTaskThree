@@ -23,3 +23,4 @@ class Phone(models.Model):
 
     class Meta:
         unique_together = [['name', 'price'], ]
+        ordering = ['name']

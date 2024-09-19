@@ -1,20 +1,26 @@
-from django.shortcuts import render, redirect
+from django.views.generic import ListView, RedirectView, DetailView
 from phones.models import Phone
 
 
-def index(request):
-    return redirect('catalog')
+class Index(RedirectView):
+    url = 'catalog'
 
 
-def show_catalog(request):
-    template = 'catalog.html'
-    phones = Phone.objects.all()
-    context = {'phones': phones}
-    return render(request, template, context)
+class ShowCatalog(ListView):
+    template_name = 'phones/catalog.html'
+    queryset = Phone.objects.all()
+    context_object_name = 'phones'
+
+    def get_ordering(self):
+        sort = self.request.GET.get('sort')
+        if sort == 'name':
+            return ['-name']
+        if sort == 'min_price':
+            return ['price']
+        if sort == 'max_price':
+            return ['-price']
 
 
-def show_product(request, slug):
-    template = 'product.html'
-    phone = Phone.objects.get(slug=slug)
-    context = {'phone': phone}
-    return render(request, template, context)
+class ShowProduct(DetailView):
+    model = Phone
+    template_name = 'phones/product.html'
