@@ -16,6 +16,7 @@ def start_migrate_json(path: str = None):
     print('Миграция началась')
     with open(settings.BASE_DIR / path, encoding='utf-8') as f:
         reader = json.load(f)
+        add, non_add = 0, 0
         for row in reader:
             row = row['fields']
             try:
@@ -23,7 +24,10 @@ def start_migrate_json(path: str = None):
                      author=row['author'],
                      pub_date=row['pub_date']).save()
             except django.db.utils.IntegrityError:
+                non_add += 1
                 print('Запись с автором %s и его книгой  %s уже существует' % (row['author'], row['name']))
             else:
                 print('Запись %s %s добавлена' % (row['author'], row['name']))
+                add += 1
+    print(f'Пропущено {non_add} записи(ь)\nДобавлено {add} записи(ь)')
     print('Миграция закончилась')
