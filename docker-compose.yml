@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+
+  project:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - postgres
+    ports:
+      - 127.0.0.1:8000:8000
+#    network_mode: host
+
+  postgres:
+    image: postgres:15
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_USER="postgres"
+      - POSTGRES_PASSWORD="1234"
+      - POSTGRES_DB="netology_import_phones"
